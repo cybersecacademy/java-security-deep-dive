@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bill</title>
+</head>
+<body>
+<div th:if="${message}">
+    <h2 th:text="${message}"/>
+</div>
+<form action="/bill" method="POST" enctype="multipart/form-data">
+    <p>
+        <input name="bill_xml" type="file"/>
+    </p>
+    <p>
+        <input type="submit" value="Process bill"/>
+    </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Details</title>
+</head>
+<body>
+<table>
+    <tr><th>ID: </th><td th:text="${payment.id}">1</td></tr>
+    <tr><th>Payment Owner: </th><td th:text="${payment.user}">username</td></tr>
+    <tr><th>Amount: </th><td th:text="${payment.amount}">100</td></tr>
+    <tr><th>Description: </th><td th:text="${payment.description}">Description</td></tr>
+</table>
+<p><a href="/payments">Back to list</a></p>
+<p><a href="/login?logout">Logout</a></p>
+</body>
+</html>

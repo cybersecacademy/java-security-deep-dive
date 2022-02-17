@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developer CTF - Hello Service</title>
+</head>
+<body>
+<h2>Developer CTF - Hello Service</h2>
+<a th:href="@{/hello(name = ${name} ? ${name} : 'test' )}" href="/hello?name=test">set your name</a><br/>
+<a th:href="@{/ois(session = ${b64session})}" href="/ois?session=">look at yourself</a>
+</body>
+</html>

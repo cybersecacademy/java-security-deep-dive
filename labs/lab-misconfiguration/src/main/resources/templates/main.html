@@ -1,0 +1,28 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <title>Fee Calculator</title>
+</head>
+<body>
+
+<form method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>Salary</td>
+            <td><input type="text" name="salary"  th:value="${salary}"/></td>
+        </tr>
+        <tr>
+            <td>Fee(%):</td>
+            <td><input type="text" name="fee"  th:value="${fee}"/></td>
+        </tr>
+        <tr>
+            <td><button type="submit">Get salary without fee</button></td>
+        </tr>
+    </table>
+</form>
+
+<h3 th:if="${result}" th:text="${result}">
+</h3>
+</body>
+</html>

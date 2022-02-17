@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bill>
+    <product id="28">
+        <name>Hacker's stuff</name>
+        <quantity>1</quantity>
+        <price>1337</price>
+    </product>
+    <product id="30">
+        <name>Dev stuff</name>
+        <quantity>30</quantity>
+        <price>1000</price>
+    </product>
+</bill>

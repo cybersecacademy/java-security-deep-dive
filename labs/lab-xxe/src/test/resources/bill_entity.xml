@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE foo [ <!ELEMENT foo ANY >
+        <!ENTITY xxe "XXETESTXXE"> ]>
+<bill>
+    <product id="28">
+        <name>&xxe;</name>
+        <quantity>1</quantity>
+        <price>1337</price>
+    </product>
+</bill>

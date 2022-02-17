@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="@{'Bill ' + ${bill_name}}">Bill example</title>
+</head>
+<body>
+<h1 th:text="@{'Bill ' + ${bill_name}}">Bill example</h1>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>quantity</th>
+        <th>Price</th>
+    </tr>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.name}">TestProductName</td>
+        <td th:text="${product.quantity}">777</td>
+        <td th:text="${product.price}">123.45</td>
+    </tr>
+    <tr>
+        <td><b>SUMMARY:</b></td>
+        <td></td>
+        <td th:text="${total_price}">100.00</td>
+    </tr>
+</table>
+</body>
+</html>

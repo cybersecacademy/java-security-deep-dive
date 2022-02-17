@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GuestBook</title>
+</head>
+<body>
+<h1>New Posts:</h1>
+<span th:each="post : ${posts}">
+    <p th:utext="${post.text}">Post Text</p>
+    <p><i>Posted by <span th:utext="${post.author}">Author</span></i></p>
+    <hr/>
+</span>
+<h3>Add Post:</h3>
+<form method="POST">
+    <input type="text" name="author" placeholder="Enter your name" style="margin:10px;width:300px;"/><br/>
+    <textarea name="text" placeholder="Enter your post" style="margin:10px;width:300px;"></textarea><br/>
+    <button type="submit" style="margin:10px;width:300px;">Submit post</button>
+</form>
+</body>
+</html>

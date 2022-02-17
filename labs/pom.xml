@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>edu.otib</groupId>
+    <artifactId>labs</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>lab-xxe</module>
+        <module>lab-deserialization</module>
+        <module>lab-xss</module>
+        <module>lab-sqli</module>
+        <module>lab-known_vulns</module>
+        <module>lab-broken-access-control</module>
+        <module>lab-csrf</module>
+        <module>lab-idor</module>
+        <module>lab-misconfiguration</module>
+    </modules>
+</project>

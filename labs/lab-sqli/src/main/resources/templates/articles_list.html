@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>News Portal</title>
+</head>
+<body>
+<h1>News List:</h1>
+<span th:each="news_item : ${articles}">
+    <h2 th:text="${news_item.title}">News Title</h2>
+    <a th:href="@{{id}(id=${news_item.id})}" href="1/">Read...</a>
+</span>
+</body>
+</html>

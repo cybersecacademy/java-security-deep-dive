@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Payments List</title>
+</head>
+<body>
+<h1>Payments List:</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Payment Owner</th>
+        <th>Amount (RUB)</th>
+        <th>Details</th>
+    </tr>
+    <tr th:each="payment : ${payments}">
+        <td th:text="${payment.id}">1</td>
+        <td th:text="${payment.user}">user</td>
+        <td th:text="${payment.amount}">100</td>
+        <td><a th:href="@{/payments/{id}(id=${payment.id})}" href="1/">View full details...</a></td>
+    </tr>
+</table>
+<p><a href="/login?logout">Logout</a></p>
+</body>
+</html>

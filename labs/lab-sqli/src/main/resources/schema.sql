@@ -1,0 +1,13 @@
+CREATE TABLE article
+(
+  id INTEGER AUTO_INCREMENT,
+  title VARCHAR(255),
+  text VARCHAR(1023),
+  CONSTRAINT pk_news PRIMARY KEY (id)
+);
+CREATE TABLE secret
+(
+  id INTEGER AUTO_INCREMENT,
+  val VARCHAR(255),
+  CONSTRAINT pk_secrets PRIMARY KEY (id)
+);
